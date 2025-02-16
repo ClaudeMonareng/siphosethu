@@ -1,46 +1,25 @@
-        // TOGGLE NAVBAR
-        
-        let menu = document.querySelector('#menu-bars');
-        let navbar = document.querySelector('.navbar');
 
-        menu.addEventListener('click', ()=>{
-            menu.classList.toggle('fa-times');
-            navbar.classList.toggle('nav-toggle');
-        });
+// TOGGLE NAVBAR
 
-        window.onscroll = ()=>{
-            menu.classList.remove('fa-times');
-            navbar.classList.remove('nav-toggle');
-        }
+const menuBtn = document.querySelector(".menu-btn");
+const navigation = document.querySelector(".navigation");
 
-        // STICKY NAVBAR                            
-        // NAVIGATION BAR EFFECTS ON SCROLL 
+menuBtn.addEventListener("click", () => {
+    menuBtn.classList.toggle("active");
+    navigation.classList.toggle("active");
+});
 
-        window.addEventListener("scroll", function () {
-            const header = document.querySelector("header");
-            header.classList.toggle("sticky", window.scrollY > 2);
-        });
+// now, we will fix navigation issue...menu close after clicked any link
 
-        // PORTFOLIO SECTION - MODAL
+function toggleMenu() {
+    menuBtn.classList.remove('active');
+    navigation.classList.remove('active');
+}
 
-        const portfolioModals = document.querySelectorAll(".portfolio-modal");
-        const imgCards = document.querySelectorAll(".img-card");
-        const portfolioCloseBtns= document.querySelectorAll(".portfolio-close-btn");
+// STICKY NAVBAR                            
+// NAVIGATION BAR EFFECTS ON SCROLL 
 
-        var portfolioModal = function(modalClick){
-            portfolioModals[modalClick].classList.add("active");
-        }
-        
-        imgCards.forEach((imgCard, i) => {
-            imgCard.addEventListener("click", () => {
-                portfolioModal(i);
-            });
-        });
-
-        portfolioCloseBtns.forEach((portfolioCloseBtn) => {
-            portfolioCloseBtn.addEventListener("click", () => {
-            portfolioModals.forEach((portfolioModalView) => {
-                    portfolioModalView.classList.remove("active");
-                });
-            });
-        });
+window.addEventListener("scroll", function () {
+    const header = document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY > 0);
+});

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Organizational Structure | Official Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Organizational Structure | Siphosethu</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header class="subheader">
@@ -12,28 +12,29 @@
             <a href="index.html"><img src="images/siphosethu.png"></a>
             <a href="index.html"><h3>SIPHOSETHU</h3></a>
         </div>
-        
-        <div id="menu-bars" class="fas fa-bars"></div>
-
-        <nav class="navbar">
-            <a href="index.html">Features</aef=>
-            <a href="index.html">About</a>
-            <a href="index.html">Teachers</a>
-            <a href="index.html">Services</a>
-            <a href="index.html">Testimonies</a>
-            <a href="index.html">Contact</a>
-        </nav>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="index.html" onclick="toggleMenu()">Home</a>
+                <a href="#features" onclick="toggleMenu()">Features</a>
+                <a href="#about" onclick="toggleMenu()">About</a>
+                <a href="#teacher" onclick="toggleMenu()">Teachers</a>
+                <a href="#services" onclick="toggleMenu()">Services</a>
+                <a href="#testimonials" onclick="toggleMenu()">Testimonials</a>
+                <a href="#contact" onclick="toggleMenu()">Contact</a>
+            </div>
+        </div>
     </header>
     <div class="grid-container">
         <div class="grid-item item1"><img src="./images/principal.jpg" alt=""></div>
         <div class="grid-item item2">
             <main class="info-page">
-                <h1>Our Management</h1>
+                <h1 class="heading">Our Management</h1>
                 <div>
-                    <p>The Organizational Structure of Siphosethu Pre-School and Creche is comprised of the Governing Committee Principal, Administrator, Practitioners, Cooker, Cleaners and the Gardener. </p>
+                    <p>The Organizational Structure of Siphosethu Pre-School and Creche is comprised of the Governing Committee, Principal, Administrator, Practitioners, Cooker, Cleaners and the Gardener. </p>
                 </div>
                 <div>
-                    <p>The governing committee is constituted by at least seven members from the parents and serves as an oversight governing bod, who meet on quarterly bases to review their oversight governing role and consult with the principal on managment and administrative progressive or developing matters. </p>
+                    <p>The governing committee is constituted by at least seven members from the parents and serves as an oversight governing body, who meet on quarterly bases to review their oversight governing role and consult with the principal on managment and administrative progressive or developing matters. </p>
                 </div>
                 <div>
                     <p>The Principal undertakes a managerial role and responsible for the organizational planning, coordination and management of the entire centre operations and holding all of the personnel accountable for their designated duties, and also to ensure facilitation of personnel progressive capacity development mechanism</p>
@@ -41,7 +42,7 @@
                 <div>
                     <p>There is an administrator who executes the accounting and bookeeping duties and responsible for maintaining records and other secretarial duties and all of the general office work. Siphosethu Creche has eight practitioners, of whom four practitioners are for the basic elementary level and three practitioners are for the pre-school.</p>
                 </div>
-                <div><p>Siphosethu, Pre-School and Creche envisage to enroll total of 250 children in different stages and categories of classes and is currently employing the following staff members: </p>
+                <div><p>Siphosethu, Pre-School and Creche envisages to enroll a total of 250 children in different stages and categories of classes and is currently employing the following staff members: </p>
                 <p>
                     <ul>
                         <li>10 Full Time Practitioners</li>
@@ -61,11 +62,6 @@
     </div>
 
     <div class="footer background">
-        <div class="footer-waves">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-            </svg>
-        </div>
         <div class="box-container">
             <div class="box">
                 <h3><i class="fas fa-school">SIPHOSETHU</i></h3>
@@ -87,11 +83,12 @@
                 <a href="organizationStructure.html"><i class="fas fa-caret-right"></i>Our Organization Structure</a>
             </div>
         </div>
-        <div class="credit-container">
-            <div class="credit">&#169 2024 <a href="https://claudemonareng.github.io/inkanyezi-creatives/"><span>Siphosethu Creche and Pre-school</span></a></div>
+        <div class="footer-copyright" style="margin-top: 8rem;">
+            <p>&#169 2025 by Siphosethu Creche and Pre-School. All Rights Reserved.</p>
+            <!-- <p style="font-size: 1.5rem;">Reg. No.: 2024/727172/07</p> -->
         </div>
     </div>
 
-    <script src="index.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>

@@ -4,27 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/images/siphosethu.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <title>School Calendar | Official Website</title>
+    <title>School Calendar | Siphosethu</title>
 </head>
-<body">
-
+<body>
     <header class="subheader">
         <div class="logo-section">
             <a href="index.html"><img src="images/siphosethu.png"></a>
-            <a href="index.html"><h3>Siphosethu</h3></a>
+            <a href="index.html"><h3>SIPHOSETHU</h3></a>
         </div>
-        <div id="menu-bars" class="fas fa-bars"></div>
+        <div class="menu-btn"></div>
         <div class="navigation">
             <div class="navigation-items">
-                <a href="index.html">Home</a>
-                <a href="#features">Features</a>
-                <a href="#about">About</a>
-                <a href="#teacher">Teachers</a>
-                <a href="#services">Services</a>
-                <a href="#testimonials">Testimonies</a>
-                <a href="#contact">Contact</a>
+                <a href="index.html" onclick="toggleMenu()">Home</a>
+                <a href="#features" onclick="toggleMenu()">Features</a>
+                <a href="#about" onclick="toggleMenu()">About</a>
+                <a href="#teacher" onclick="toggleMenu()">Teachers</a>
+                <a href="#services" onclick="toggleMenu()">Services</a>
+                <a href="#testimonials" onclick="toggleMenu()">Testimonials</a>
+                <a href="#contact" onclick="toggleMenu()">Contact</a>
             </div>
         </div>
     </header>
@@ -149,9 +148,12 @@
                 <a href="organizationStructure.html"><i class="fas fa-caret-right"></i>Our Organization Structure</a>
             </div>
         </div>
-        <div class="credit-container">
-            <div class="credit">&#169 2024 <a href="https://claudemonareng.github.io/keyaa/"><span>Siphosethu Creche and Pre-school</span></a></div>
+        <div class="footer-copyright" style="margin-top: 8rem;">
+            <p>&#169 2025 by Siphosethu Creche and Pre-School. All Rights Reserved.</p>
+            <!-- <p style="font-size: 1.5rem;">Reg. No.: 2024/727172/07</p> -->
         </div>
     </div>
+    
+    <script src="./index.js"></script>
 </body>
 </html>
