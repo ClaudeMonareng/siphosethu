@@ -55,6 +55,7 @@ html{
 
 .body{
     background: url(./images/card-bg2.png);
+    background: url(./images/card-bg2.png);
     background-size: cover;
     background-position: center;
 }
@@ -144,11 +145,11 @@ h4{
     position: relative;
     border-radius: 12px;
     position: relative;
-    background: rgb(63, 189, 25);
+    background: rgba(190, 103, 207, 0.81)
 }
 
 #btn:hover{
-    background: rgb(40, 138, 10);
+    background: rgba(133, 84, 143, 0.71)
 }
 
 /* INFO PAGE */
@@ -354,6 +355,8 @@ header a img{
     border-radius: 100%;
     object-fit: fill;
     object-position: center;
+    object-fit: fill;
+    object-position: center;
 }
 
 header .navigation .navigation-items a{
@@ -433,7 +436,7 @@ header .navbar a:hover{
     text-transform: uppercase;
     font-size: 1.5em;
     font-weight: 600;
-    background: linear-gradient(to bottom, transparent 0%, red, yellow, green, blue, purple);
+    background: linear-gradient(to bottom, transparent 0%, yellow, green, yellow);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
@@ -516,6 +519,7 @@ header .navbar a:hover{
     flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
+    gap: 2em;
     gap: 2em;
 }
 
@@ -602,6 +606,7 @@ header .navbar a:hover{
     color: #fff;
     transform: translateY(5rem);
     opacity: 0;
+    transition: 1s;
     transition: 1s;
 }
 
