@@ -1,5 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root{
+    --yellow: rgb(255, 255, 0);
+    --white: #fff;
+    
+    --yellow: rgb(255, 255, 0);
+    --white: #fff;
+
+    /* MAIN THEME COLORS */
+
+    --first-color: #0e2431;
+    --second-color: #6a59d1;
+    --third-color: #777;
+
+    /* VARIANT COLORS */
+
+    --first-variant: rgb(104, 182, 27);
+    --second-variant: #7862f5;
+    --third-variant: rgb(184, 82, 235);
+
+    /* HOVER COLORS */
+
+    --hover-color: #614fd0;
+
+    /* BACKROUND COLORS */
+
+    --body-bg-color: #fefefe;
+    --body-bg-color: #fff;
+    --modal-bg-color: #fff;
+    --bg-transparent-color: rgba(0, 0, 0, 0.1);
+    --transparent-color-01: rgba(0, 0, 0, 0.1);
+    --transparent-color-02: rgba(106, 89, 209, 0.1);
+    --line-color: #d7d7d7;
+
+    /* COLOR FILTER */
+
+    --color-filter: invert(1);
+
+    /* BOX SHADOW */
+
+    --box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+
+    /* FONT SIZE */
+
+    --small-font-size: 0.9em;
+    --normal-font-size: 1em;
+
+    /* SCROLL BAR COLORS */
+
+    --scroll-bar-color: #c5cadf;
+    --scroll-thumb-color: #70768a;
+    --scroll-thumb-hover-color: #454f6b;
+}
+
 *{
     padding: 0;
     box-sizing: border-box;
@@ -631,13 +684,13 @@ header .navbar a:hover{
 .portfolio-list .img-card{
     position: relative;
     max-width: 100%;
-    width: 37rem;
+    width: 35rem;
     height: 360px;
     border-radius: 10px;
     box-shadow: var(--box-shadow);
     overflow: hidden;
     cursor: pointer;
-    margin: 1rem;
+    margin: 2rem;
 }
 
 .portfolio-list .img-card .overlay{
