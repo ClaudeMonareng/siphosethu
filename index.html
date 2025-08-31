@@ -3,29 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/images/siphosethu.png">
+    <link rel="icon" type="image/x-icon" href="./images/siphosethu.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Siphosethu | Official Website</title>
 </head>
 <body>
+    <!-- HEADER -->
     <header>
-        <div class="logo-section">
-            <a href="index.html"><img src="images/siphosethu.png"></a>
-            <a href="index.html"><h3>SIPHOSETHU</h3></a>
-        </div>
-        <div class="menu-btn"></div>
-        <div class="navigation">
-            <div class="navigation-items">
-                <a href="index.html" onclick="toggleMenu()">Home</a>
-                <a href="#features" onclick="toggleMenu()">Features</a>
-                <a href="#about" onclick="toggleMenu()">About</a>
-                <a href="#teacher" onclick="toggleMenu()">Teachers</a>
-                <a href="#services" onclick="toggleMenu()">Services</a>
-                <a href="#testimonials" onclick="toggleMenu()">Testimonials</a>
-                <a href="#contact" onclick="toggleMenu()">Contact</a>
+        <nav class="nav-bar">
+            <a href="index.html" class="logo"><h3 style="color: rgb(236, 228, 208);">SIPHOSETHU<span><br>PRE-PRIMARY</span></h3></a>
+            <div class="navigation">
+                <div class="nav-items">
+                    <div class="nav-close-btn"></div>
+                    <ul>
+                        <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+                        <li><a href="#features" onclick="toggleMenu()">Features</a></li>
+                        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                        <li><a href="#teacher" onclick="toggleMenu()">Teachers</a></li>
+                        <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+                        <li><a href="#testimonials" onclick="toggleMenu()">Testimonials</a></li>
+                        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
+            <div class="nav-menu-btn"></div>
+        </nav>
     </header>
 
     <!-- HOME -->
@@ -37,7 +40,7 @@
                 <h3>Our Gift</h3>
             </div>
             <div class="flex-center">
-                <a href="#about" id="btn">Learn More</a>
+                    <a href="#about" class="btn" id="btn">Learn More</a>
             </div>
         </div>
     </section>
@@ -131,7 +134,7 @@
         <div class="box-container">
             <div class="box">
                 <img src="images/mntambo.jpg" alt="">
-                <h3>Mrs. Sebenzile Goodness Mntambo</h3>
+                <h3>Mrs. Mntambo Sebenzile Goodness</h3>
                 <span>Head Teacher and Principal</span>
                 <p>Im a hard worker. I love raising my children with discipline and to be God loving human-beings. In my spare time i enjoy watching television and cooking. I also love teaching in unday school at church. I generally enjoy spending my time with children from all different spheres of life while imparting in them poittive values about life and Skills so that they grow to become responible leaders of tomorrow. I started my passion teaching, particularly at a creche from a tender age. I loved being outdoors, being a friendly person with community members.Continuously learning and development. As of now, 2024, i see myself retired in the next five years.</p>
             </div>
@@ -139,7 +142,7 @@
                 <img src="images/zona.jpg" alt="">
                 <h3>Miss Zona Mntambo</h3>
                 <span>Administrator</span>
-                <p>I have a passion for cooking and singing. I am a ward community member and community representative. I studied in Cape Peninsula doing Public Relations. I started working as a voluteer. I see my self changing the landscape of ECD and obid school, accommodation place to assist as a second home. Specifically as a community centre. </p>
+                <p>I have a passion for cooking and singing. I am a ward community member and community representative. I studied in Cape Peninsula doing Public Relations. I started working as a voluteer. I see my self changing the landscape of ECD and abet school, accommodation place to assist as a second home, specifically as a community centre. </p>
             </div>
             <div class="box">
                 <img src="images/slindile.jpg" alt="">
@@ -285,7 +288,7 @@
                 <div class="box" id="contact-details">
                     <h3>Contact Details</h3>
                     <p><i class="fas fa-map-marker-alt"></i> Madadeni Section 5, Newcastle, KwaZulu-Natal, South Africa</p>
-                    <p><i class="fas fa-envelope"></i> Principal: Mrs. Sebenzile Goodness Mntambo</p>
+                    <p><i class="fas fa-envelope"></i> Principal: Sebenzile Goodness Mntambo</p>
                     <p><i class="fas fa-phone"></i> 083 740 0430 </p>
                 </div>
                 <div class="box" id="operating-times">
@@ -310,7 +313,7 @@
     <div class="footer">
         <div class="box-container">
             <div class="box">
-              <h3><i class="fas fa-school"> SIPHOSETHU</i></h3>
+                <h3>SIPHOSETHU</h3>
                 <P>Our Gift</P>
             </div>
             <div class="box">
@@ -341,6 +344,6 @@
         </div>
     </div>
 
-    <script src="index.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>
